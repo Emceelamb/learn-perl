@@ -1,0 +1,27 @@
+#!/usr/bin/perl -w
+
+my @array=('a','b','c','d');
+print @array, "\n";
+
+# three ways to use quote words to make an array
+
+my @quoteWord1=qw/a b c d/;
+print @quoteWord1, "\n";
+
+my @quoteWord2= qw' d e f g';
+print @quoteWord2, "\n" ;
+
+my @quoteWord3=qw { h i j};
+print @quoteWord3, "\n";
+
+# sequential array
+@sequenceToTen= (1..10);
+print @sequenceToTen, "\n";
+
+
+# print array size using scalar function
+print $size=scalar (@sequenceToTen);
+
+print "\n";
+
+print $size=$#sequenceToTen +1;
